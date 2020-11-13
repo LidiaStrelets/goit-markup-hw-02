@@ -1,0 +1,165 @@
+:root {
+  --headers-color: #212121;
+  --accent-color: #2196f3;
+  --text-color: #757575;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --bgc: #2f303a;
+  --button-bcg-color: #f5f4fa;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+}
+/*общие стили*/
+body {
+  color: var(--text-color);
+  background-color: var(--white-color);
+  letter-spacing: 0.03em;
+  font-family: roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/*общие стили*/
+/*логотип*/
+.logo {
+  color: var(--black-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.accent {
+  color: var(--accent-color);
+}
+footer > .logo {
+  color: var(--white-color);
+}
+/*логотип*/
+/*шапка*/
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link {
+  color: var(--headers-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+.contakts {
+  color: inherit;
+}
+.contakts:hover,
+.contakts:focus {
+  color: var(--accent-color);
+}
+/*шапка*/
+/*hero*/
+.hero {
+  background-color: var(--bgc);
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+}
+.hero > h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+.hero > a {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: var(--accent-color);
+}
+/*ховер и фокус не понятно, какими должны быть, но поскольку это кнопка или ссылка они должны быть*/
+.hero > a:hover,
+.hero > a:focus {
+  background-color: var(--text-color);
+}
+
+/*hero*/
+/*features*/
+.features-items {
+  color: var(--headers-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-items + p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*features*/
+
+/*occupations, team*/
+.occupations,
+.team {
+  color: var(--headers-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-description {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-name {
+  color: var(--headers-color);
+  font-weight: 500;
+  font-size: inherit;
+}
+
+/*occupations, team*/
+/*футер*/
+footer {
+  background-color: var(--bgc);
+}
+.footer > p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+.footer > a {
+  color: var(--footer-address-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*футер*/
+/*portfolio*/
+.filter {
+  color: var(--headers-color);
+  background-color: var(--button-bcg-color);
+}
+.filter:hover,
+.filter:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.portfolio-item {
+  color: var(--headers-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-example {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+/*portfolio*/
